@@ -21,6 +21,61 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
+  <div class="containe">
+    <div class="row">
+      <div class="col-12 text-center my-4">
+        <h1>Data Mahasiswa</h1>
+        <p class="lead">Selamat datang di halaman data mahasiswa. Di sini Anda dapat melihat, menambah, mengedit, dan menghapus data mahasiswa.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 my-4">
+        <h3 class="mb-4 text-center">INPUT DATA MAHASISWA</h3>
+        <form method="POST">
+          <table class="table table-bordered">
+            <tr>
+              <td class="text-right">NIM:</td>
+              <td><input type="text" name="nim" class="form-control" required /></td>
+            </tr>
+            <tr>
+              <td class="text-right">NAMA:</td>
+              <td><input type="text" name="nama" class="form-control" required /></td>
+            </tr>
+            <tr>
+              <td class="text-right">TEMPAT LAHIR:</td>
+              <td><input type="text" name="tempat" class="form-control" required /></td>
+            </tr>
+            <tr>
+              <td class="text-right">TANGGAL LAHIR:</td>
+              <td><input type="date" name="tl" class="form-control" required /></td>
+            </tr>
+            <tr>
+              <td class="text-right">GENDER:</td>
+              <td>
+                <select name='gender'>
+                      <option value='Laki-laki'>Laki-laki</option>
+                      <option value='Perempuan'>Perempuan</option>
+                  </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-right">EMAIL:</td>
+              <td><input type="text" name="email" class="form-control" required /></td>
+            </tr>
+            <tr>
+              <td class="text-right">TELP:</td>
+              <td><input type="text" name="telp" class="form-control" required /></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <button type="submit" name="simpan" class="btn btn-primary">SIMPAN</button>
+                <button type="reset" class="btn btn-secondary">RESET</button>
+              </td>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid text-center my-4">
     <div class="row">
       <div class="col-12">
@@ -36,6 +91,7 @@
               <th scope="col">GENDER</th>
               <th scope="col">EMAIL</th>
               <th scope="col">TELP</th>
+              <th scope="col" colspan="2">ACTION</th>
             </tr>
           </thead>
           <tbody>

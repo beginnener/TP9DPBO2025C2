@@ -6,5 +6,7 @@
 
 include("view/TampilMahasiswa.php");
 
-$tp = new TampilMahasiswa();
+$post = $_SERVER['REQUEST_METHOD'] === 'POST' ? $_POST : null;
+
+$tp = new TampilMahasiswa($post);
 $data = $tp->tampil();
